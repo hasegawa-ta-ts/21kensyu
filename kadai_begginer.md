@@ -59,8 +59,8 @@ print_r($joinArray);
 
 ```
 $a = 'こんにちは';
-print '$a' ."\n";
-print "$a \n";
+print '$a';
+print "$a";
 print "みなさん、$a"
 ```
 
@@ -68,11 +68,13 @@ print "みなさん、$a"
 
 ```
 $a
-こんにちは 
+こんにちは
 みなさん、こんにちは
 
 ※3つめのprint文に関してですが、変数の直後に文字を入れるとエラーが起こってしまいます。  
-（変数がどこまでかがPHPエンジンが分からなくなってしまうため）
+（変数がどこまでかがPHPエンジンが分からなくなってしまうため)  
+
+
 ```
 </div></details>
 
@@ -97,6 +99,24 @@ $b = 1;
 print 'aは' . ++$a;
 print "\n";
 print 'bは' . $b++;
+```
+
+<details><summary>サンプルの答えを表示</summary><div>
+
+```
+aは2
+bは1
+```
+</div></details>
+
+
+
+### 問題04
+$oldHouseから、太郎さん、次郎さんを$newHouseに移動させてください。
+
+```
+$oldHouse = ['太郎','次郎','三郎','四郎'];
+$newHouse = [];
 ```
 
 <details><summary>サンプルの答えを表示</summary><div>
