@@ -23,69 +23,30 @@ $num = (string) $num;
 </div></details><br>
 
 ### 問題02
-下記の二つの変数を使用し、"Hello, Tom" と出力してください。
-```
-$greet = 'Hello';
-$name = 'Tom';
-```
+整数値を入力させ、値が0ならzero、0でなければnot zeroと表示するプログラムを作成せよ。
 
 <details><summary>サンプルの答えを表示</summary><div>
-
 ```
-echo $greet . ', ' . $name;
+$num = 0;
+if($num === 0) {
+    echo 'zero';
+} else {
+    echo 'not zero';
+}
 ```
-</div></details><br>
+</div></details>
 
 ### 問題03
-下記の二つの配列を結合し、一つの配列として出力してください。
-```
-$strArray = ['A','B','C'];
-$numArray = [1,2,3];
-```
+整数値を入力させ、その値を絶対値にして表示するプログラムを作成せよ。
 
 <details><summary>サンプルの答えを表示</summary><div>
-
 ```
-$strArray = ['A','B','C'];
-$numArray = [1,2,3];
-
-$joinArray = array_merge($strArray, $numArray);
-print_r($joinArray);
-```
-</div></details>
-
-### 問題04
-下記の変数はそれぞれどのように表示されるか想像してください
-
-```
-$a = 'こんにちは';
-print '$a';
-print "$a";
-print "みなさん、$a"
-```
-
-<details><summary>サンプルの答えを表示</summary><div>
-
-```
-$a
-こんにちは
-みなさん、こんにちは
-
-※3つめのprint文に関してですが、変数の直後に文字を入れるとエラーが起こってしまいます。  
-（変数がどこまでかがPHPエンジンが分からなくなってしまうため)  
-
-
-```
-</div></details>
-
-### 問題04
-消費税（tax）の定数を作成してください。（税率は10%でお願いします。）
-
-
-<details><summary>サンプルの答えを表示</summary><div>
-
-```
-const Tax = 1.1;
+$num = 0;
+if($num < 0) {
+    echo $num * -1;
+} else {
+    echo $num;
+}
 ```
 </div></details>
 
@@ -107,11 +68,32 @@ print 'bは' . $b++;
 aは2
 bは1
 ```
+参考記事：https://wepicks.net/phpref-operators_increment/  
+
 </div></details>
 
-
-
 ### 問題04
+Hello World!を10回繰り返して表示するプログラムを作成せよ。
+
+```
+$greet = 'Hello World!';
+for($i=0;$i<10;$i++) {
+    echo $greet;
+    echo "\n";
+}
+```
+
+<details><summary>サンプルの答えを表示</summary><div>
+
+```
+aは2
+bは1
+```
+参考記事：https://wepicks.net/phpref-operators_increment/  
+
+</div></details>
+
+### 問題05
 $oldHouseから、太郎さん、次郎さんを$newHouseに移動させてください。
 
 ```
@@ -124,5 +106,24 @@ $newHouse = [];
 ```
 aは2
 bは1
+```
+</div></details>
+
+
+### 問題02
+下記の二つの配列を結合し、一つの配列として出力してください。
+```
+$strArray = ['A','B','C'];
+$numArray = [1,2,3];
+```
+
+<details><summary>サンプルの答えを表示</summary><div>
+
+```
+$strArray = ['A','B','C'];
+$numArray = [1,2,3];
+
+$joinArray = array_merge($strArray, $numArray);
+print_r($joinArray);
 ```
 </div></details>
