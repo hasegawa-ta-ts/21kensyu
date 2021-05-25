@@ -97,13 +97,12 @@ preg_match関数を使用してください
 
 ```
 $zipCode = '111-1111';
-function checkZip($zipCode) {
- if(preg_match('/^[0-9][0-9][0-9][-][0-9][0-9][0-9][0-9]$/', $zipCode)) {
-     return true;
- }
- return false;
- }
+$result = false;
+if(preg_match('/^[0-9][0-9][0-9][-][0-9][0-9][0-9][0-9]$/', $zipCode)) {
+    $result = true;
 }
+var_dump()($result);
+
 ```
 </div></details><br>
 
