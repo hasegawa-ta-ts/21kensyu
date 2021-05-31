@@ -168,25 +168,12 @@ for($i = 1; $i <= 100; $i++){    //1から100までループ
 ```
 </div></details><br>
 
-### 問題10
-1から100までの値を繰り返しで表示するが、3の倍数の時はfizz、5の倍数の時はbuzzと数字の代わりに表示するプログラムを作成せよ。  
-なお、3と5の両方の倍数の時はfizzbuzzと表示される。
+### 問題10（ここダブってました...）
+少々お待ちください
 
 <details><summary>サンプルの答えを表示</summary><div>
 
 ```
-for($i = 1; $i <= 100; $i++){    //1から100までループ
-    if($i % 15 == 0){
-        print "FizzBuzz";
-    }else if($i % 3 == 0){
-        print "Fizz";
 
-    }else if($i % 5 == 0){
-        print "Buzz";
-    }else{
-        print $i;
-    }
-    print "　";
-}
 ```
 </div></details><br>
