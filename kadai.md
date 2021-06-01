@@ -168,12 +168,24 @@ for($i = 1; $i <= 100; $i++){    //1から100までループ
 ```
 </div></details><br>
 
-### 問題10（ここダブってました...）
-少々お待ちください
+### 問題10
+nameのみ入れた、$nameArrayを作成してください。  
+多次元連想配列は結構扱う機会があるので、いくつか練習問題を解くことをお勧めします。
+```
+$members = [
+  ['name' => 'Tom', 'age' => 30, 'country' => 'USA'],
+  ['name' => 'John', 'age' => 25,'country' => 'UK'],
+  ['name' => 'Marry', 'age' => 22,'country' => 'Canada']
+];
+```
 
 <details><summary>サンプルの答えを表示</summary><div>
 
 ```
-
+$nameArray = array();
+foreach($members as $member) {
+    $nameArray[] = $member['name'];
+}
+var_dump($nameArray);
 ```
 </div></details><br>
